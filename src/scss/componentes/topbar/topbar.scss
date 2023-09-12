@@ -1,0 +1,21 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 36px;
+  border-bottom: solid $divider-white 0.1px;
+
+  &__container {
+    display: flex;
+    gap: 10px;
+
+    input {
+      outline: none;
+      font-family: $font;
+      font-size: 12px;
+      letter-spacing: 0.12px;
+      color: $gray;
+      border: none;
+    }
+  }
+}
+

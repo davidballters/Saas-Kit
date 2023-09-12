@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/dist/css/style.css" />
+    <title>SAAS-KIT</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <aside class="sidebar">
+        <h1 class="sidebar__title">SaaS</h1>
+
+        <div class="profile">
+          <img src="/src/assets/imgs/profile_photo.png" class="profile__avatar">
+          <div class="profile__content">
+            <h3 class="profile__name">Sierra Ferguson</h3>
+            <span class="profile__email">s.ferguson@gmail.com</span>
+          </div>
+        </div>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item ">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_1152_1294)">
+                    <path d="M4 12.3C3.83431 12.3 3.7 12.1657 3.7 12V4C3.7 3.83431 3.83431 3.7 4 3.7H10C10.1657 3.7 10.3 3.83431 10.3 4V12C10.3 12.1657 10.1657 12.3 10 12.3H4ZM4 20.3C3.83431 20.3 3.7 20.1657 3.7 20V16C3.7 15.8343 3.83432 15.7 4 15.7H10C10.1657 15.7 10.3 15.8343 10.3 16V20C10.3 20.1657 10.1657 20.3 10 20.3H4ZM14 20.3C13.8343 20.3 13.7 20.1657 13.7 20V12C13.7 11.8343 13.8343 11.7 14 11.7H20C20.1657 11.7 20.3 11.8343 20.3 12V20C20.3 20.1657 20.1657 20.3 20 20.3H14ZM13.7 4C13.7 3.83431 13.8343 3.7 14 3.7H20C20.1657 3.7 20.3 3.83431 20.3 4V8C20.3 8.16569 20.1657 8.3 20 8.3H14C13.8343 8.3 13.7 8.16569 13.7 8V4Z" stroke="#C2CFE0" stroke-width="1.4"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1152_1294">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                Dashboard
+              </a>
+            </li>
+
+            <li class="menu__list-item menu__list-item--with-submenu">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_1152_1291)">
+                    <path d="M3 3.7H20C20.1634 3.7 20.3 3.8366 20.3 4V10C20.3 10.1634 20.1634 10.3 20 10.3H3C2.8366 10.3 2.7 10.1634 2.7 10V4C2.7 3.8366 2.8366 3.7 3 3.7ZM3 13.7H20C20.1634 13.7 20.3 13.8366 20.3 14V20C20.3 20.1634 20.1634 20.3 20 20.3H3C2.8366 20.3 2.7 20.1634 2.7 20V14C2.7 13.8366 2.8366 13.7 3 13.7Z" stroke="#C2CFE0" stroke-width="1.4"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1152_1291">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                Tasks
+              </a>
+
+              <ul class="menu__list-submenu">
+                <li class="menu__list-item yellow">
+                  <a href="#">Active</a>
+                </li>
+
+                <li class="menu__list-item green">
+                  <a href="#">Completed</a>
+                </li>
+
+                <li class="menu__list-item red">
+                  <a href="#">Ended</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu__list-item menu__list-item--with-submenu">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_1152_1287)">
+                    <path d="M2.71 6.00058V6C2.71 5.28202 3.29116 4.7 4 4.7H20C20.7134 4.7 21.3 5.2866 21.3 6V18C21.3 18.7134 20.7134 19.3 20 19.3H4C3.28669 19.3 2.70015 18.7135 2.7 18.0003C2.7 18.0002 2.7 18.0001 2.7 18L2.71 6.00058Z" stroke="#C2CFE0" stroke-width="1.4"/>
+                    <path d="M3 6L12 12L21 6" stroke="#C2CFE0" stroke-width="1.4"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1152_1287">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                Email
+                </a>
+
+              <ul class="menu__list-submenu">
+                <li class="menu__list-item   yellow">
+                  <a href="#">Draft</a>
+                </li>
+
+                <li class="menu__list-item  purple">
+                  <a href="#">Scheduled</a>
+                </li>
+
+                <li class="menu__list-item  green">
+                  <a href="#">Sent</a>
+                </li>
+
+                <li class="menu__list-item red">
+                  <a href="#">Archived</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_1152_1284)">
+                    <path d="M8.03329 7.33317C8.03329 5.14144 9.80822 3.3665 12 3.3665C14.1917 3.3665 15.9666 5.14144 15.9666 7.33317C15.9666 9.52491 14.1917 11.2998 12 11.2998C9.80822 11.2998 8.03329 9.52491 8.03329 7.33317ZM3.36663 17.8332C3.36663 17.3144 3.62092 16.8083 4.16167 16.3092C4.70718 15.8057 5.49622 15.3581 6.42548 14.9859C8.28512 14.2409 10.53 13.8665 12 13.8665C13.47 13.8665 15.7148 14.2409 17.5744 14.9859C18.5037 15.3581 19.2927 15.8057 19.8382 16.3092C20.379 16.8083 20.6333 17.3144 20.6333 17.8332V20.6332H3.36663V17.8332Z" stroke="#C2CFE0" stroke-width="1.4"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1152_1284">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                Contacts
+              </a>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_1152_1281)">
+                    <path d="M6 17.3H5.71005L5.50503 17.505L2.7 20.3101V4C2.7 3.2866 3.2866 2.7 4 2.7H20C20.7134 2.7 21.3 3.2866 21.3 4V16C21.3 16.7134 20.7134 17.3 20 17.3H6Z" stroke="#C2CFE0" stroke-width="1.4"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1152_1281">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                Chat
+              </a>
+            </li>
+
+            <li class="menu__list-item menu__list-item--with-submenu">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_1152_1276)">
+                    <path d="M3 4.7H21C21.1634 4.7 21.3 4.8366 21.3 5V19C21.3 19.1634 21.1634 19.3 21 19.3H3C2.8366 19.3 2.7 19.1634 2.7 19V5C2.7 4.8366 2.8366 4.7 3 4.7Z" stroke="#C2CFE0" stroke-width="1.4"/>
+                    <rect x="7.80005" y="4" width="1.4" height="16" fill="#C2CFE0"/>
+                    <rect x="14.8" y="4" width="1.4" height="16" fill="#C2CFE0"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1152_1276">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                Deals
+              </a>
+
+              <ul class="menu__list-submenu">
+                <li class="menu__list-item  yellow">
+                  <a href="#">Low</a>
+                </li>
+
+                <li class="menu__list-item  green">
+                  <a href="#">Higth</a>
+                </li>
+
+                <li class="menu__list-item  red">
+                  <a href="#">Urgent</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu__list-item menu__list-item--with-submenu">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_1152_1343)">
+                    <path d="M6 10C4.9 10 4 10.9 4 12C4 13.1 4.9 14 6 14C7.1 14 8 13.1 8 12C8 10.9 7.1 10 6 10ZM18 10C16.9 10 16 10.9 16 12C16 13.1 16.9 14 18 14C19.1 14 20 13.1 20 12C20 10.9 19.1 10 18 10ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z" fill="#C2CFE0"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1152_1343">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                Settings
+              </a>
+
+              <ul class="menu__list-submenu">
+                <li class="menu__list-item">
+                  <a href="#">
+                    <img src="/src/assets/icons/icons-settings/account.png" alt="icon-acount">
+                  </a>
+                </li>
+      
+                <li class="menu__list-item">
+                  <a href="#">
+                    <img src="/src/assets/icons/icons-settings/notifications.png" alt="icon-notifications">
+                  </a>
+                </li>
+      
+                <li class="menu__list-item">
+                  <a href="#">
+                    <img src="/src/assets/icons/icons-settings/colleagues.png" alt="icon-colleagues">
+                  </a>
+                </li>
+      
+                <li class="menu__list-item">
+                  <a href="#">
+                    <img src="/src/assets/icons/icons-settings/integrations.png" alt="icon-integrations">
+                  </a>
+                </li>
+      
+                <li class="menu__list-item">
+                  <a href="#">
+                    <img src="/src/assets/icons/icons-settings/tags.png" alt="icon-tags">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="toggle">
+            <div class="toggle__content">
+              <svg  class="active" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <g clip-path="url(#clip0_1152_1323)">
+                 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.89543 0 2V12C0 13.1046 0.89543 14 2 14H12C13.1046 14 14 13.1046 14 12V2C14 0.895431 13.1046 0 12 0H2ZM5 2C4.44772 2 4 2.44772 4 3V11C4 11.5523 4.44772 12 5 12C5.55228 12 6 11.5523 6 11V3C6 2.44772 5.55228 2 5 2Z" fill="#C2CFE0"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1152_1323">
+                  <rect width="14" height="14" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </nav>
+      </aside> 
+  
+      <main role="main" class="wrapper">
+        <header class="topbar">
+          <div class="topbar__container">
+            <img src="/src/assets/icons/search.svg" alt="globar-icon" class="container__icon">
+            <input type="text" id="search-input" placeholder= "Global search">
+          </div>
+          <img  src="/src/assets/icons/notifications.svg" alt="notification" class="container__notification">
+        </header>
+
+        <section class="wrapper__content">
+          <div class="tasks">
+            <div class="tasks__progres">
+              <p>8 task completed out of 10</p>
+              <span>Show:</span>
+            </div>
+            <div class="tasks__progres-bar  skills__bar--70"></div>
+          
+            <div class="tasks__wrapper">
+              <section class="tasks__wrapper__header">
+                <p class="current-date"></p>
+              </section>
+              <div class="calendar"></div>
+            </div>
+
+            <div class="sections">
+              <div class="section">
+                <div class="section__task">
+                  <div class="section__task__box">
+                    <h2 class=section__task__box__title>Send benefit review by Sunday</h2>
+                    <span>Due date :</span>
+                    <div class="section__img">
+                      <img class="section__img__avatar" src="/src/assets/imgs/george.png"  alt="avatar-task">
+                      <p>George Fields</p>
+                    </div>
+                  </div>
+                
+                  <div class="section__function">
+                    <span class="section__function__reminder">Reminder</span>
+                    <button class="section__function  btn">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section">
+                <div class="section__task">
+                  <div class="section__task__box">
+                    <h2 class=section__task__box__title>Send benefit review by Sunday</h2>
+                    <span>Due date :</span>
+                    <div class="section__img">
+                      <img class="section__img__avatar" src="/src/assets/imgs/rebecca.png"  alt="avatar-task">
+                      <p>Rebecca Moore</p>
+                    </div>
+                  </div>
+                
+                  <div class="section__function">
+                    <span class="section__function__reminder">Reminder</span>
+                    <button class="section__function  btn">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section">
+                <div class="section__task">
+                  <div class="section__task__box">
+                    <h2 class=section__task__box__title>Send benefit review by Sunday</h2>
+                    <span>Due date :</span>
+                    <div class="section__img">
+                      <img class="section__img__avatar" src="/src/assets/imgs/lindsey.png"  alt="avatar-task">
+                      <p>Lindsey Stroud</p>
+                    </div>
+                  </div>
+                
+                  <div class="section__function">
+                    <span class="section__function__reminder">Reminder</span>
+                    <button class="section__function  btn">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section">
+                <div class="section__task">
+                  <div class="section__task__box">
+                    <h2 class=section__task__box__title>Send benefit review by Sunday</h2>
+                    <span>Due date :</span>
+                    <div class="section__img">
+                      <img class="section__img__avatar" src="/src/assets/imgs/george.png"  alt="avatar-task">
+                      <p>George Fields</p>
+                    </div>
+                  </div>
+                
+                  <div class="section__function">
+                    <span class="section__function__reminder">Reminder</span>
+                    <button class="section__function  btn">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section">
+                <div class="section__task">
+                  <div class="section__task__box">
+                    <h2 class=section__task__box__title>Send benefit review by Sunday</h2>
+                    <span>Due date :</span>
+                    <div class="section__img">
+                      <img class="section__img__avatar" src="/src/assets/imgs/rebecca.png"  alt="avatar-task">
+                      <p>Rebecca Moore</p>
+                    </div>
+                  </div>
+                
+                  <div class="section__function">
+                    <span class="section__function__reminder">Reminder</span>
+                    <button class="section__function  btn">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section">
+                <div class="section__task">
+                  <div class="section__task__box">
+                    <h2 class=section__task__box__title>Send benefit review by Sunday</h2>
+                    <span>Due date :</span>
+                    <div class="section__img">
+                      <img class="section__img__avatar" src="/src/assets/imgs/lindsey.png"  alt="avatar-task">
+                      <p>Lindsey Stroud</p>
+                    </div>
+                  </div>
+                
+                  <div class="section__function">
+                    <span class="section__function__reminder">Reminder</span>
+                    <button class="section__function  btn">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section">
+                <div class="section__task">
+                  <div class="section__task__box">
+                    <h2 class=section__task__box__title>Send benefit review by Sunday</h2>
+                    <span>Due date :</span>
+                    <div class="section__img">
+                      <img class="section__img__avatar" src="/src/assets/imgs/george.png"  alt="avatar-task">
+                      <p>George Fields</p>
+                    </div>
+                  </div>
+                
+                  <div class="section__function">
+                    <span class="section__function__reminder">Reminder</span>
+                    <button class="section__function  btn">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section">
+                <div class="section__task">
+                  <div class="section__task__box">
+                    <h2 class=section__task__box__title>Send benefit review by Sunday</h2>
+                    <span>Due date :</span>
+                    <div class="section__img">
+                      <img class="section__img__avatar" src="/src/assets/imgs/rebecca.png"  alt="avatar-task">
+                      <p>Rebecca Moore</p>
+                    </div>
+                  </div>
+                
+                  <div class="section__function">
+                    <span class="section__function__reminder">Reminder</span>
+                    <button class="section__function  btn">Completed</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section">
+                <div class="section__task">
+                  <div class="section__task__box">
+                    <h2 class=section__task__box__title>Send benefit review by Sunday</h2>
+                    <span>Due date :</span>
+                    <div class="section__img">
+                      <img class="section__img__avatar" src="/src/assets/imgs/lindsey.png"  alt="avatar-task">
+                      <p>Lindsey Stroud</p>
+                    </div>
+                  </div>
+                
+                  <div class="section__function">
+                    <span class="section__function__reminder">Reminder</span>
+                    <button class="section__function  btn">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="show-more-btn" type="button">Show More</button>
+          </div>
+
+          <div class="box">
+            <div class="deals">
+              <div class="header">
+                <h2 class=box__title>Deals</h2>
+                <span>Show : </span>
+              </div>
+              <canvas class="mychart" id="myChart"></canvas>
+            </div>
+    
+            <div class="graph">
+              <div class="header">
+                <h2 class=box__title>Graph</h2>
+                <span>Show : </span>
+              </div>
+              <canvas class="mychart-2" id="myChart2"></canvas>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/dist/js/sidebar.js"></script>
+    <script src="/dist/js/wrapper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" ></script>
+    <script src="/dist/js/diagrams.js"></script>
+  </body>
+</html>

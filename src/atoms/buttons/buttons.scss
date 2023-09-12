@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 13px;
+  color: $white;
+  background: $green-button;
+  font-size: 12px;
+  border: none;
+  text-align: center;
+
+  &:hover {
+    background-position: left bottom;
+    color:$red-button;
+  }
+
+  &__outline {
+    background-color: $white;
+    // color: $red-button;
+    box-shadow: none;
+  }
+
+  @include mq(md) {
+    font-size: 18px;
+    padding: 10px 28px;
+    border-radius: 13px;
+  }
+
+  @include mq (lg){
+    font-size: 16px;
+  }
+}

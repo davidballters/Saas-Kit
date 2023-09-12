@@ -1,0 +1,24 @@
+{
+  "name": "saas-kit",
+  "version": "1.0.0",
+  "description": "sas-kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch src/scss/main.scss:dist/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidballters/Saas-Kit.git"
+  },
+  "author": "David Ballesteros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidballters/Saas-Kit/issues"
+  },
+  "homepage": "https://github.com/davidballters/Saas-Kit#readme",
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "node-sass": "^9.0.0"
+  }
+}

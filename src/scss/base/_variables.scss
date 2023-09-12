@@ -1,0 +1,45 @@
+// font
+// $font: 'Poppins', sans-serif;    
+$font: 'Poppins', sans-serif;
+
+//colors 
+$accent-blue: #109CF1;
+$blue-ligth:#34AFF9;
+$dark-blue:#334D6E;
+$yellow-button: #FFB946;
+$purple-button:#885AF8;
+$green-button:#2ED47A;
+$red-button:#F7685B;
+$black:#192A3E;
+$table-black:#323C47;
+$table-gray:#707683;
+$text-dark-blue:#334D6E;
+$gray:#90A0B7;
+$icon-gray:#C2CFE0;
+$white:#FFFFFF;
+$divider-white:#EBEFF2;
+$background-dashboard:#F5F6f8;
+
+//transform
+
+$skill-bar-length:0%;
+
+
+//global media vars
+$xs: 375px;
+$sm: 425px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+
+//Breakpoints
+$breakpoints: (
+    xs: $xs,
+    sm: $sm,
+    md: $md,
+    lg: $lg,
+    xl: $xl,
+);
+
+
+
